@@ -98,7 +98,7 @@ Edit the **Config** block near the top of `cointegration_scanner_2.1.py` to fit 
 
 ---
 
-## 📈 Methodology (Under the Hood)
+## 📈 Methodology
 
 1. **Universe & Data**
    - Scrape S&P 500 tickers from Wikipedia (normalize dots→dashes for Yahoo, e.g., `BRK.B` → `BRK-B`).
