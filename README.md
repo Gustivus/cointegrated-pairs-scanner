@@ -81,7 +81,7 @@ HL_MIN / HL_MAX	5 / 120	Half-life bounds
 MIN_PAIRS	20	Target trade-ready pairs
 MAX_RELAX_STEPS	8	Max relax iterations
 
-📈 Methodology
+## 📈 Methodology
 Data Fetch
 
 Get S&P 500 list from Wikipedia
