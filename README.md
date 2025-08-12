@@ -5,7 +5,7 @@ Pulls constituents, downloads prices, runs Engle–Granger with BH-FDR correctio
 
 ---
 
-## 📌 Features
+##  Features
 
 - **Data acquisition:** S&P 500 members (Wikipedia) + Adjusted Close via `yfinance`
 - **Data handling:** log prices, intersection alignment, minimum sample filters
@@ -24,7 +24,7 @@ Pulls constituents, downloads prices, runs Engle–Granger with BH-FDR correctio
 
 ---
 
-## ⚙️ Requirements
+##  Requirements
 
 ```bash
 pip install pandas numpy yfinance statsmodels lxml requests
@@ -36,7 +36,7 @@ pip install tqdm
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 python3 cointegration_scanner_2.1.py
@@ -66,7 +66,7 @@ Saved trade-ready pairs to pairs_trade_ready.csv (rows: 22)
 
 ---
 
-## 🔧 Configuration
+##  Configuration
 
 Edit the **Config** block near the top of `cointegration_scanner_2.1.py` to fit your needs.
 
@@ -98,7 +98,7 @@ Edit the **Config** block near the top of `cointegration_scanner_2.1.py` to fit 
 
 ---
 
-## 📈 Methodology
+##  Methodology
 
 1. **Universe & Data**
    - Scrape S&P 500 tickers from Wikipedia (normalize dots→dashes for Yahoo, e.g., `BRK.B` → `BRK-B`).
@@ -129,7 +129,7 @@ Edit the **Config** block near the top of `cointegration_scanner_2.1.py` to fit 
 
 ---
 
-## 📄 Output Files & Schemas
+##  Output Files & Schemas
 
 ### `pairs_scan_all.csv`
 | Column | Meaning |
@@ -157,7 +157,7 @@ Edit the **Config** block near the top of `cointegration_scanner_2.1.py` to fit 
 
 ---
 
-## 🧪 Troubleshooting
+##  Troubleshooting
 
 - **“No symbols with sufficient data”**  
   Extend the window (`START_DATE` earlier), reduce `MIN_DAYS`, or lower `MAX_TICKERS`.
@@ -173,7 +173,7 @@ Edit the **Config** block near the top of `cointegration_scanner_2.1.py` to fit 
 
 ---
 
-## 💡 Notes & Extensions
+##  Notes & Extensions
 
 - **Custom universe:** Replace `get_sp500_symbols()` with a static list/CSV (sectors, ETFs, ADRs).
 - **Different frequency:** Resample to weekly/monthly before log transform for slower regimes.
@@ -189,7 +189,7 @@ Backtest with realistic frictions and risk controls before trading live.
 
 ---
 
-## 📜 MIT License
+##  MIT License
 
 Copyright (c) 2025 Conor Maguire
 
